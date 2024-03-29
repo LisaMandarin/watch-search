@@ -1,0 +1,259 @@
+/* ---------------- basic setting ---------------- */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+:root {
+    --background-color: #00171F;
+    --text-color: #ffffff;
+    --title-color: #00A8E8;
+    --dark-blue: #003459;
+    --light-blue: #007EA7;
+    --font-body: "Noto Serif", serif;
+    --font-title: "Nunito", sans-serif;
+}
+
+
+.title-font {
+  font-family: "Noto Serif", serif;
+  font-optical-sizing: auto;
+  font-weight: 1000;
+  font-style: normal;
+}
+
+.body-font {
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+    font-size: 20px;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    margin: 130px auto;
+    font-family: var(--font-body);
+}
+
+a {
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+a:visited {
+  color: var(--text-color);
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* ---------------- end of basic setting ---------------- */
+
+/* ---------------- header setting ---------------- */
+header {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  align-items: center;
+}
+.logo-image {
+  width: auto;
+  height: 100px;
+}
+
+#search-bar {
+  width: 70%;
+  height: 44px;
+  margin: 10px;
+  padding-left: 20px;
+  border-radius: 20px;
+}
+
+.advanced-search {
+  width: 70%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+}
+
+.select-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.search-button {
+  width: fit-content;
+  height: 44px;
+  padding: 10px;
+  border-radius: 10%;
+  margin-top: 10px;
+}
+
+@keyframes rubberBand {
+  from {
+    transform: scale3d(1, 1, 1);
+  }
+
+  30% {
+    transform: scale3d(1.25, 0.75, 1);
+  }
+
+  40% {
+    transform: scale3d(0.75, 1.25, 1);
+  }
+
+  50% {
+    transform: scale3d(1.15, 0.85, 1);
+  }
+
+  65% {
+    transform: scale3d(0.95, 1.05, 1);
+  }
+
+  75% {
+    transform: scale3d(1.05, 0.95, 1);
+  }
+
+  to {
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+.rubberBand {
+  animation-name: rubberBand;
+  animation-duration: 2s;
+}
+
+
+
+/* ---------------- end of header setting ---------------- */
+
+
+/* ---------------- main setting ---------------- */
+
+.cardContainer {
+  width: 70%;
+  margin: 0 auto;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-box {
+  width: 100%;
+  padding-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+}
+
+.card-box:first-child a, .card-year {
+  font-size: 35px;
+  color: var(--title-color);
+}
+.card-box:nth-child(2) {
+  text-indent: 30px;
+}
+
+.card-box-left {
+  padding-right: 10px;
+}
+
+.card-box-right {
+  align-self: center;
+}
+
+.streaming-container {
+  width: 70%;
+  margin: 0 auto;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.streaming-card {
+  padding-left: 10px;
+}
+
+.streaming-img-container {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.streaming-img-container:hover {
+  box-shadow: 0 0 5px 5px;
+}
+
+.streaming-img-container div {
+  align-self: center;
+}
+.streaming-serviceImg {
+  width: 100px;
+  height: auto;
+}
+
+hr {
+  width: 70%;
+}
+
+/* ---------------- end of main setting ---------------- */
+
+/* ---------------- footer setting ---------------- */
+footer {
+  text-align: center;
+  padding: 10px;
+}
+
+.back-to-search {
+  width: 100px;
+  background-color: var(--title-color);
+  border-radius: 10px;
+  padding: 10px;
+  opacity: 80%;
+  font-family: var(--font-title);
+  font-size: 14px;
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  text-decoration: none;
+}
+
+.back-to-search:hover {
+  box-shadow: 0 0 5px 5px
+}
+
+/* ---------------- end of footer setting ---------------- */
+
+
+/* ---------------- mobile view ---------------- */
+@media (max-width: 400px) {
+  body {
+    margin: 30px;
+  }
+
+  #search-bar {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  .select-box {
+    width: 100%;
+  }
+  .cardContainer {
+    width: 100%;
+  }
+
+  .streaming-container {
+    width: 100%;
+  }
+
+  hr {
+    width: 100%;
+  }
+}
