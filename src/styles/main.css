@@ -1,16 +1,15 @@
 /* ---------------- basic setting ---------------- */
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
 
 :root {
-    --background-color: #00171F;
-    --text-color: #ffffff;
-    --title-color: #00A8E8;
-    --dark-blue: #003459;
-    --light-blue: #007EA7;
-    --font-body: "Noto Serif", serif;
-    --font-title: "Nunito", sans-serif;
+  --background-color: #00171f;
+  --text-color: #ffffff;
+  --title-color: #00a8e8;
+  --dark-blue: #003459;
+  --light-blue: #007ea7;
+  --font-body: "Noto Serif", serif;
+  --font-title: "Nunito", sans-serif;
 }
-
 
 .title-font {
   font-family: "Noto Serif", serif;
@@ -27,15 +26,15 @@
 }
 
 * {
-    box-sizing: border-box;
-    font-size: 20px;
+  box-sizing: border-box;
+  font-size: 20px;
 }
 
 body {
-    background-color: var(--background-color);
-    color: var(--text-color);
-    margin: 130px auto;
-    font-family: var(--font-body);
+  background-color: var(--background-color);
+  color: var(--text-color);
+  margin: 130px auto;
+  font-family: var(--font-body);
 }
 
 a {
@@ -129,10 +128,7 @@ header {
   animation-duration: 2s;
 }
 
-
-
 /* ---------------- end of header setting ---------------- */
-
 
 /* ---------------- main setting ---------------- */
 
@@ -151,7 +147,8 @@ header {
   flex-direction: row;
 }
 
-.card-box:first-child a, .card-year {
+.card-box:first-child a,
+.card-year {
   font-size: 35px;
   color: var(--title-color);
 }
@@ -225,11 +222,10 @@ footer {
 }
 
 .back-to-search:hover {
-  box-shadow: 0 0 5px 5px
+  box-shadow: 0 0 5px 5px;
 }
 
 /* ---------------- end of footer setting ---------------- */
-
 
 /* ---------------- mobile view ---------------- */
 @media (max-width: 400px) {

@@ -1,77 +1,95 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Search a show and rent or buy it on a streaming service.">
-  <meta property="og:title" content="Homepage - Watch Search: Rent or Buy Shows on Streaming Services">
-  <meta property="og:type" content="website">
-  <meta property="og:description" content="Search a show and rent or buy it on a streaming service.">
-  <meta property="og:url" content="https://lisamandarin.github.io/watchsearch/">
-  <meta property="og:image" content="https://lisamandarin.github.io/watchsearch/images/logo.webp">
-  
-  <title>Watch & Search</title>
-  <link rel="stylesheet" href="styles/normalize.css">
-  <link rel="stylesheet" href="styles/main.css">
-</head>
-<body>
-  <header id="header">
-    <img src="images/logo.webp" alt="logo image" class="logo-image"/>
-    <input type="text" name="search-text" id="search-bar" placeholder="Enter the title of a show or a movie" />
-    <div class="advanced-search">
-      <div class="select-box">
-        <label for="select-country">Country</label>
-        <select id="select-country">
-          <option value="us">United States</option>
-          <option value="ae">United Emirates</option>
-          <option value="ar">Argentina</option>
-          <option value="at">Austria</option>
-          <option value="au">Australia</option>
-          <option value="az">Azerbaijan</option>
-          <option value="br">Brazil</option>
-          <option value="ca">Canada</option>
-          <option value="de">Germany</option>
-          <option value="es">Spain</option>
-          <option value="fr">France</option>
-          <option value="gb">United Kingdom</option>
-          <option value="hk">Hong Kong</option>
-          <option value="id">Indonesia</option>
-          <option value="in">India</option>
-          <option value="it">Italy</option>
-          <option value="jp">Japan</option>
-          <option value="kr">South Korea</option>
-          <option value="mx">Mexico</option>
-          <option value="my">Malaysia</option>
-          <option value="nz">New Zealand</option>
-          <option value="ph">Philippines</option>
-          <option value="pt">Portugal</option>
-          <option value="ru">Russia</option>
-          <option value="sg">Singapore</option>
-          <option value="th">Thailand</option>
-          <option value="za">South Africa</option>
-        </select>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Search a show and rent or buy it on a streaming service."
+    />
+    <meta
+      property="og:title"
+      content="Homepage - Watch Search: Rent or Buy Shows on Streaming Services"
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:description"
+      content="Search a show and rent or buy it on a streaming service."
+    />
+    <meta
+      property="og:url"
+      content="https://lisamandarin.github.io/watchsearch/"
+    />
+    <meta
+      property="og:image"
+      content="https://lisamandarin.github.io/watchsearch/images/logo.webp"
+    />
+
+    <title>Watch & Search</title>
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/main.css" />
+  </head>
+  <body>
+    <header id="header">
+      <img src="images/logo.webp" alt="logo image" class="logo-image" />
+      <input
+        type="text"
+        name="search-text"
+        id="search-bar"
+        placeholder="Enter the title of a show or a movie"
+      />
+      <div class="advanced-search">
+        <div class="select-box">
+          <label for="select-country">Country</label>
+          <select id="select-country">
+            <option value="us">United States</option>
+            <option value="ae">United Emirates</option>
+            <option value="ar">Argentina</option>
+            <option value="at">Austria</option>
+            <option value="au">Australia</option>
+            <option value="az">Azerbaijan</option>
+            <option value="br">Brazil</option>
+            <option value="ca">Canada</option>
+            <option value="de">Germany</option>
+            <option value="es">Spain</option>
+            <option value="fr">France</option>
+            <option value="gb">United Kingdom</option>
+            <option value="hk">Hong Kong</option>
+            <option value="id">Indonesia</option>
+            <option value="in">India</option>
+            <option value="it">Italy</option>
+            <option value="jp">Japan</option>
+            <option value="kr">South Korea</option>
+            <option value="mx">Mexico</option>
+            <option value="my">Malaysia</option>
+            <option value="nz">New Zealand</option>
+            <option value="ph">Philippines</option>
+            <option value="pt">Portugal</option>
+            <option value="ru">Russia</option>
+            <option value="sg">Singapore</option>
+            <option value="th">Thailand</option>
+            <option value="za">South Africa</option>
+          </select>
+        </div>
+        <div class="select-box">
+          <label for="select-show_type">Show Type</label>
+          <select id="select-show_type">
+            <option value="all">Any</option>
+            <option value="movie">Movies</option>
+            <option value="series">Series</option>
+          </select>
+        </div>
       </div>
-      <div class="select-box">
-        <label for="select-show_type">Show Type</label>
-        <select id="select-show_type">
-          <option value="all">Any</option>
-          <option value="movie">Movies</option>
-          <option value="series">Series</option>
-        </select>
-      </div>
-    </div>
-    <button class="search-button title-font">search</button>
-  </header>
-  <main class="body-font">
-    
-  </main>
-  <footer>
-    &copy;<span class="year"></span> by Min-ting Chuang
-    <a href="#header">
-      <div class="back-to-search">Back to Search</div>
-    </a>
-  </footer>
-  <script src="js/getDate.js"></script>
-  <script src="js/data.js" type="module"></script>
-</body>
+      <button class="search-button title-font">search</button>
+    </header>
+    <main class="body-font"></main>
+    <footer>
+      &copy;<span class="year"></span> by Min-ting Chuang
+      <a href="#header">
+        <div class="back-to-search">Back to Search</div>
+      </a>
+    </footer>
+    <script src="js/getDate.js"></script>
+    <script src="js/data.js" type="module"></script>
+  </body>
 </html>
