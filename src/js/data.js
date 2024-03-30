@@ -4,7 +4,7 @@ import ShowDetail from "./card.js";
 
 const baseURL = "https://streaming-availability.p.rapidapi.com/";
 const apiKEY = import.meta.env.VITE_API_KEY;
-
+console.log(apiKEY);
 const options = {
   method: "GET",
   headers: {
