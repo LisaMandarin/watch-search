@@ -20,6 +20,13 @@ async function performSearch() {
   // Clear existing results before fetching new ones
   clearResult();
 
+  //set loading preview
+  const loading = document.createElement("div");
+  loading.textContent = "Loading, please wait...";
+  loading.classList.add("loading");
+  const mainElem = document.querySelector("main");
+  mainElem.appendChild(loading);
+
   const title = document.querySelector("#search-bar").value;
   const country = document.querySelector("#select-country").value;
   const show_type = document.querySelector("#select-show_type").value;
@@ -31,7 +38,14 @@ async function performSearch() {
     if (!response.ok) throw new Error("Network response was not ok.");
     const results = await response.json();
 
-    if (Array.isArray(results.result)) {
+    loading.remove();
+    if (results.result.length === 0) {
+      const errorMsg = "No result!";
+      const errorMsgElem = document.createElement("div");
+      errorMsgElem.textContent = errorMsg;
+      errorMsgElem.classList.add("cardContainer");
+      mainElem.appendChild(errorMsgElem);
+    } else if (Array.isArray(results.result)) {
       results.result.forEach((result) => {
         new ShowDetail(result).init();
       });

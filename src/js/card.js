@@ -37,7 +37,7 @@ export default class ShowDetail {
         (data) =>
           `
             <div class="streaming-card">
-                <a href="${data.link}" target="_blank class="streaming-link">
+                <a href="${data.link}" target="_blank" class="streaming-link">
                     <div class="streaming-img-container">
                         <img src="/images/streaming-logo/${data.service}.webp" class="streaming-serviceImg" alt="${data.service}"/>
                         <div>${data.streamingType}</div>

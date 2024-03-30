@@ -199,6 +199,31 @@ hr {
   width: 70%;
 }
 
+.loading {
+  width: 70%;
+  margin: 0 auto;
+  min-height: 12rem;
+  background: linear-gradient(
+      100deg,
+      rgba(255, 255, 255, 0) 40%,
+      rgba(255, 255, 255, 0.5) 50%,
+      rgba(255, 255, 255, 0) 60%
+    )
+    #dedede;
+  background-size: 200% 100%;
+  background-position-x: 120%;
+  animation: loading 1s ease-in-out infinite;
+  text-align: center;
+  padding: 10px;
+  color: darkgray;
+}
+
+@keyframes loading {
+  to {
+    background-position-x: -20%;
+  }
+}
+
 /* ---------------- end of main setting ---------------- */
 
 /* ---------------- footer setting ---------------- */
@@ -250,6 +275,10 @@ footer {
   }
 
   hr {
+    width: 100%;
+  }
+
+  .loading {
     width: 100%;
   }
 }
