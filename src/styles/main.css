@@ -59,6 +59,10 @@ header {
   margin-bottom: 10px;
   align-items: center;
 }
+
+#visit-count {
+  color: var(--title-color);
+}
 .logo-image {
   width: auto;
   height: 100px;
