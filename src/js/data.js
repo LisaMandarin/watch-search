@@ -3,12 +3,13 @@ import ShowDetail from "./card.js";
 // ----------api information----------
 
 const baseURL = "https://streaming-availability.p.rapidapi.com/";
+const apiKEY = import.meta.env.VITE_API_KEY;
+
 
 const options = {
   method: "GET",
   headers: {
-    // "X-RapidAPI-Key": "d3aba69b6fmsh17c1f11a47cb011p19a02bjsn5d6558abaadb",
-    "X-RapidAPI-Key": import.meta.env.apiKEY,
+    "X-RapidAPI-Key": apiKEY,
     "X-RapidAPI-Host": "streaming-availability.p.rapidapi.com",
   },
 };
