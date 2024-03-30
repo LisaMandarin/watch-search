@@ -2,7 +2,7 @@
   "name": "Watch Search",
   "version": "2.0.0",
   "description": "Search the show and watch it",
-  "main": "data.js",
+  "main": "js/getData".js",
   "scripts": {
     "start": "vite",
     "build": "vite build --emptyOutDir",
