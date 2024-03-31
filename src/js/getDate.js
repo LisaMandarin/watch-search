@@ -4,7 +4,9 @@ window.addEventListener("DOMContentLoaded", () => {
     : 0;
   visitCount++;
   localStorage.setItem("visitCount", visitCount);
-  document.getElementById("visit-number").textContent = visitCount;
+
+  const visitText = `Wow!  This is your ${visitCount} ${visitCount === 1 ? "time" : "times"} visiting the website.`;
+  document.getElementById("visit-count").textContent = visitText;
 });
 
 const today = new Date();
